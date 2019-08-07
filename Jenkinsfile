@@ -17,7 +17,7 @@ pipeline {
         CI = 'ture'
       }
       steps {
-        sh './jenkins/scripts/test.sh'
+        sh 'echo "This is a test - `Date`"'
       }
     }
   }
