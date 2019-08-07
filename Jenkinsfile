@@ -17,7 +17,7 @@ pipeline {
         CI = 'ture'
       }
       steps {
-        sh 'echo "This is a test - `Date`"'
+        sh 'echo "This is a test - `date`"'
       }
     }
   }
