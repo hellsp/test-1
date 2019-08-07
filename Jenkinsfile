@@ -20,5 +20,16 @@ pipeline {
         sh 'echo "This is a test - `date`"'
       }
     }
+    stage('Deliver') {
+      steps {
+        sh 'echo "This is a Deliver - `date`"'
+      }
+    }
+    stage('') {
+      steps {
+        input 'Finished using the web site? (Click "Proceed" to continue)'
+        sh 'echo "This is a kill.sh - `date`"'
+      }
+    }
   }
 }
